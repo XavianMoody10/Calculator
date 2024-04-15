@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  height: 100vh;
+  background-color: #d9d9d9;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.calculator {
+  background-color: white;
+  padding: 15px;
+  width: 580px;
+  border-radius: 20px;
+}
+
+.calculator__input {
+  width: 100%;
+  font-size: 5rem;
+  height: 150px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+}
+
+.calculator__btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 20px;
+  margin-top: 30px;
+  border: none;
+}
+
+.calculator__btn:nth-of-type(1) {
+  grid-column: 1/3;
+}
+
+.calculator__symbols-btns {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator__symbols-btns .calculator__btn {
+  width: 70px;
+  border-radius: 100%;
+}
+
+.calculator__btn {
+  font-size: 2rem;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.calculator__btn--orange {
+  background-color: #f99c2e;
+}
+
+.calculator__btn--hover:hover {
+  background-color: black;
+  color: white;
+}
+
+/* History */
+
+.history {
+  width: 580px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.history-heading {
+  text-align: center;
+  font-weight: normal;
+}
+
+.history-list {
+  height: 100%;
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.304);
+}
+
+.history-item__text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.history-item__trash-icon {
+  font-size: 1.5rem;
+}
+
+.history-item__trash-icon:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.history-clrbtn {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: rgb(206, 206, 206);
+  font-weight: 600;
+}
+
+.history-clrbtn:hover {
+  color: rgb(173, 172, 172);
+  cursor: pointer;
+}
+
+@media (max-width: 1234px) {
+  main {
+    height: auto;
+  }
+  section {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .history {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 604px) {
+  .calculator,
+  .history {
+    max-width: none;
+    width: 100%;
+  }
+}

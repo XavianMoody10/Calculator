@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js" defer></script>
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/16b96c8656.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="calculator">
+          <input type="text" class="calculator__input" />
+          <div class="calculator__btns">
+            <button
+              class="calculator__btn calculator__btn--equal calculator__btn--orange calculator__btn--hover"
+            >
+              =
+            </button>
+            <button
+              class="calculator__btn calculator__btn--clear calculator__btn--orange calculator__btn--hover"
+            >
+              AC
+            </button>
+            <div class="calculator__symbols-btns">
+              <button
+                class="calculator__btn calculator__btn--orange calculator__btn--hover"
+              >
+                +
+              </button>
+              <button
+                class="calculator__btn calculator__btn--orange calculator__btn--hover"
+              >
+                -
+              </button>
+              <button
+                class="calculator__btn calculator__btn--orange calculator__btn--hover"
+              >
+                &times
+              </button>
+              <button
+                class="calculator__btn calculator__btn--orange calculator__btn--hover"
+              >
+                &divide
+              </button>
+            </div>
+            <button class="calculator__btn calculator__btn--hover">0</button>
+            <button class="calculator__btn calculator__btn--hover">1</button>
+            <button class="calculator__btn calculator__btn--hover">2</button>
+            <button class="calculator__btn calculator__btn--hover">3</button>
+            <button class="calculator__btn calculator__btn--hover">4</button>
+            <button class="calculator__btn calculator__btn--hover">5</button>
+            <button class="calculator__btn calculator__btn--hover">6</button>
+            <button class="calculator__btn calculator__btn--hover">7</button>
+            <button class="calculator__btn calculator__btn--hover">8</button>
+            <button class="calculator__btn calculator__btn--hover">9</button>
+          </div>
+        </div>
+
+        <div class="history">
+          <h2 class="history-heading">Your History</h2>
+
+          <ul class="history-list"></ul>
+
+          <p class="history-clrbtn">Clear History</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
